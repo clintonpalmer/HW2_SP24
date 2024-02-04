@@ -72,6 +72,6 @@ def main():
 
     mu2, sigma2 = 100, 3
     c2 = mu2 + 2 * sigma2
-    print(f"P(x>{mu2+2*sigma2}|N({mu2},{sigma2})={Probability(Gauss_Norm_PDF, (mu2,sigma2), c2, GT = False):.2f}")
+    print(f"P(x>{mu2+2*sigma2}|N({mu2},{sigma2})={Probability(Gauss_Norm_PDF, (mu2,sigma2), c2, GT = True):.2f}")
 
 main()
