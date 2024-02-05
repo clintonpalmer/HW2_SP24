@@ -18,8 +18,8 @@ def Secant(fcn, x0, x1, maxiter=10, xtol=1e-5):
     :retuns: returns estimated root
     chatgpt assisted in developing this function
     """
-    i = 0 #Initialize iteration counter to 0
-    while i <= maxiter:  #While iteration counter is less than maxiter
+    i = 1 #Initialize iteration counter to 1
+    while i <= maxiter:  #While iteration counter is less or equal to than maxiter
         f0 = fcn(x0)
         f1 = fcn(x1)
         if abs(f1) < xtol: #If absolute value of f1 is less than xtol
@@ -58,7 +58,7 @@ def main():
         """
         return math.cos(2*x) * (x ** 3) #Define the function for which we want to find the root
     root = Secant(fcn, 1, 2, 3, 1e-8)
-    print(f"cos(2x)\u22C5x\u00B3  = 0; when x = {root:.8f}")
+    print(f"cos(2x)\u22C5x\u00B3  = 0; when x \u2248 {root:.8f}") # not enough iterations to fully converge here.
 
 main()
 
