@@ -9,6 +9,7 @@ def make_diagonal_dominant(Aaug):
     the matrix and stores it to B, this is done to prevent modifying
     the original matrix. The function iterates over each row (i)
     and determines the configuration of a diagonally dominant matrix.
+    chatgpt assisted in developing this function
     """
     N = len(Aaug)
     B = copy.deepcopy(Aaug)  # makes a copy of the matrix
