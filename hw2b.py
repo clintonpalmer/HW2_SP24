@@ -44,21 +44,21 @@ def main():
         """
         return x - 3 * math.cos(x) #Define the function for which we want to find the root
     root = Secant(fcn, 1, 2, 5, 1e-4) #parameters to send to Secant function
-    print(f"x - 3cos(x) = {root:.4f}") #print to CLI
+    print(f"x - 3cos(x) = 0; when x = {root:.4f}") #print to CLI
     def fcn(x):
         """
         Defines the function and sends the parameters to the secant function
         """
         return math.cos(2*x) * (x ** 3) #Define the function for which we want to find the root
     root = Secant(fcn, 1, 2, 15, 1e-8)
-    print(f"cos(2x)\u22C5x\u00B3 = {root:.8f}")
+    print(f"cos(2x)\u22C5x\u00B3  = 0; when x = {root:.8f}")
     def fcn(x):
         """
         Defines the function and sends the parameters to the secant function
         """
         return math.cos(2*x) * (x ** 3) #Define the function for which we want to find the root
     root = Secant(fcn, 1, 2, 3, 1e-8)
-    print(f"cos(2x)\u22C5x\u00B3 = {root:.8f}")
+    print(f"cos(2x)\u22C5x\u00B3  = 0; when x = {root:.8f}")
 
 main()
 
