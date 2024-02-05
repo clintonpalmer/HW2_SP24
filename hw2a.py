@@ -73,7 +73,7 @@ def main():
     c = 105
     print(f"P(x<{c}|N({mu},{sigma}))={Probability(Gauss_Norm_PDF, (mu, sigma), c, GT=False):.2f}")
 
-    # for Probability x is greater than c2
+    # for Probability x is greater than 2 standard deviations
     mu2, sigma2 = 100, 3
     c2 = mu2 + 2 * sigma2
     print(f"P(x>{mu2+2*sigma2}|N({mu2},{sigma2})={Probability(Gauss_Norm_PDF, (mu2,sigma2), c2, GT = True):.2f}")
